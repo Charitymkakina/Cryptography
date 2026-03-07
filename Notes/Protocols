@@ -1,0 +1,13 @@
+#SSL/TLS Protocol
+SSL (Secure Socket Layer) and TLS (Transport Layer Security) are cryptographic protocols used to secure communication over the internet.
+TLS is the modern and more secure version of SSL.
+These protocols create a secure, encrypted pathway between the client and server over the internet.
+Ensuring data transmitted across the internet remains confidential, authentic, and protected from tampering.
+One common example is HTTPS. In HTTPS, the standard HTTP protocol is secured using SSL/TLS encryption. The "s" in HTTPS stands for
+secure, indicating that the connection is protected using digital certificates and encryption provided by SSL/TLS.
+Digital certificates are issued by trusted Certificate Authorities (CAs) and are used to verify the identity of websites. This helps
+prevent attackers from impersonating legitimate servers.
+SSL/TLS is not limited to securing websites. It can also be used in other applications, such as SSL VPNs, where a client remotely
+and securely connects to a corporate network through a firewall. This allows authorized users to access internal resources like files,
+databases, and applications remotely while maintaining secure, encrypted communications.
+Many VPN providers use similar encryption technologies to protect data while accessing the internet.
