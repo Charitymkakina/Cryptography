@@ -1,1 +1,16 @@
+Objective: Test the SSL/TLS configuration of a website using Kali Linux tools
+Tools used: nmap, OpenSSL, and SSLscan
 
+SSL SCAN
+Command: sslscan --show-certificate google.com
+Output Explanation:
+TLS FALLBACK SCSV: server supports TLS fallback scsv (This means it is protecting the TLS from downgrade attacks)
+TLS renegotiation: secure session renegotiation supported (Ensures proper authentication and verification during renegotiation)
+
+NMAP SCAN
+Command: nmap --script ssl-enum-ciphers -p 443 google.com
+Output Explanation: listing of TLSv1.0, TLSv1.1, TLSv1.2, and TLSv1.3 shows the TLS versions that the server supports.
+
+OPENSSL SCAN
+Command: openssl s_client -connect google.com:443
+Output: certificate chain
