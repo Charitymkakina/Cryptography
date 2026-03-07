@@ -11,3 +11,25 @@ SSL/TLS is not limited to securing websites. It can also be used in other applic
 and securely connects to a corporate network through a firewall. This allows authorized users to access internal resources like files,
 databases, and applications remotely while maintaining secure, encrypted communications.
 Many VPN providers use similar encryption technologies to protect data while accessing the internet.
+
+How Does SSL/TLS Protect You?
+Data sent across the wire (server and client) can be captured by anyone in the middle.
+The purpose of SSL/TLS is to protect the data in 3 ways:
+1. Confidentiality- Data is only accessible by the client and server.
+SSL/TLS ensures confidentiality by encrypting data transmitted between the sender and receiver. 
+This means that even if data packets are intercepted during transmission, the attacker cannot read the information without 
+the correct decryption keys.
+
+2. Integrity- Data is not modified between the client and server.
+SSL/TLS ensures data integrity by using cryptographic hashing. This mechanism allows the receiver to verify that the data 
+has not been altered while traveling across the network.
+
+3. Authentication- Client/Server are indeed who they say they are.
+SSL/TLS also supports authentication using Public Key Infrastructure. This helps to verify the identity of servers and sometimes clients, 
+preventing attackers from impersonating legitimate systems.
+
+4. Anti-Replay- SSL/TLS helps prevent replay attacks. In a Replay attack, an attacker captures a legitimate message and tries to resend it 
+Later, to trick the system into repeating an action. SSL/TLS helps to protect against this by using sequence numbers, session keys, and message authentication codes.
+
+5. Non-Repudiation- A sender cannot deny sending a message.
+
