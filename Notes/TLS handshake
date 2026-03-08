@@ -53,6 +53,9 @@ The session keys are symmetric encryption keys. They include:
      Client HMAC Key- Used to ensure the integrity of data sent by the client.
   2. Server Encryption Key- Used by the server to encrypt data sent to the client.
      Server HMAC key- Used to ensure the integrity of data sent by the server.
+Why 2 sets of keys?
+  - Traffic can be protected independently
+  - Cryptographic attacks become harder
 
 7. Change Cipher Spec
 The Client sends: ChangeCipherSpec
@@ -63,7 +66,5 @@ The client sends a finished message encrypted with a new session key. The server
 server's response: ChangeCipherSpec
                    Finished
 Once this is complete, the handshake is done.
-Why 2 sets of keys?
-  - Traffic can be protected independently
-  - Cryptographic attacks become harder
+
 
