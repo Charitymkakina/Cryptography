@@ -1,0 +1,2 @@
+A TLS handshake happens when a client connects to a server over HTTPS to establish a secure connection.
+So visiting a secure website like: https://www.google.com will trigger a TLS handshake.
