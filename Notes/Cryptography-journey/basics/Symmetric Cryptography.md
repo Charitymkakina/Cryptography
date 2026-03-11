@@ -31,4 +31,4 @@ Algorithms:
 Modern: `HMAC` `Poly1305`
 Future: `GCM` `CCM` `(AEAD Ciphers)`
 
-# 3. Pseudo Random Functions
+# 3. Pseudo Random Functions (PRFs)
