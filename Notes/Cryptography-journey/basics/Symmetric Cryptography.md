@@ -14,7 +14,7 @@ Advantage:
   1. High efficiency- Very fast compared to asymmetric cryptography
   2. Suitable for encrypting large amounts of data (bulk data).
 
-# 2. MAC/HMAC
+# 2. MAC-HMAC
 `MAC` (Message Authentication Codes) is a cryptographic function that uses a secret key and a message to produce a fixed-size authentication tag
 Hashing alone cannot provide authentication because anyone can compute a hash. A `MAC` solves this by requiring a shared secret key to generate the tag.
 `MAC` ensures;
