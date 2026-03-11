@@ -3,7 +3,7 @@ Is a mathematical operation that is performed with a secret key, verified or und
 Symmetric encryption includes 3 operations:
    1. [Symmetric encryption](#1-symmetric-encryption)
    2. [Message Authentication Codes](#2-mac-hmac)
-   3. [Pseudo Random Functions (PRFs)](#3-pseudo-randoms-functions-prfs)
+   3. [Pseudo Random Functions (PRFs)](#3-pseudo-random-functions-prfs)
 
 # 1. Symmetric Encryption
 Is a cryptographic process that transforms readable data (plaintext) into an unintelligible form called ciphertext using a secret key,
@@ -32,3 +32,8 @@ Modern: `HMAC` `Poly1305`
 Future: `GCM` `CCM` `(AEAD Ciphers)`
 
 # 3. Pseudo Random Functions (PRFs)
+`Pseudo Random Functions (PRFs)` are cryptographic functions that take a secret key and input data and produce an output that appears random but is deterministic for the same inputs.
+Without the secret key, the output is indistinguishable from random data.
+`PRFs` are commonly used to derive multiple cryptographic keys from a single shared secret, which avoids the need for repeated expensive key exchanges.
+`PRFs` are often used as building blocks for `Key Derivation Functions (KDFs)`, which generate new keys from existing secret material
+Password-based KDFs use salt and computational slowdown mechanisms to make brute-force attacks difficult.
