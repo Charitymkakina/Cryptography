@@ -1,9 +1,9 @@
 # Symmetric Cryptography
 Is a mathematical operation that is performed with a secret key, verified or undone with the identical secret key
 Symmetric encryption includes 3 operations:
-   1. [Symmetric encryption] (#1-Symmetric-Encryption)
-   2. [Message Authentication Codes] (#2-MAC/HMAC)
-   3. [Pseudo Random Functions (PRFs)] (#3-Pseudo-Randoms-Functions-PRFs)
+   1. [Symmetric encryption](#1-symmetric-encryption)
+   2. [Message Authentication Codes](#2-mac-hmac)
+   3. [Pseudo Random Functions (PRFs)](#3-pseudo-randoms-functions-prfs)
 
 # 1. Symmetric Encryption
 Is a cryptographic process that transforms readable data (plaintext) into an unintelligible form called ciphertext using a secret key,
