@@ -22,3 +22,15 @@ The process to create and verify signatures takes advantage of RSA's ability to 
 3. Decrypt the signature with the `RSA Public Key.`
 4. Compare results
 NOTE: If the digests match: Data has not been modified since it was signed. Therefore, the signature is valid.
+
+# DSA Signatures
+`Digital Signature Algorithm` (DSA) is a cryptographic algorithm used only for digital signatures.
+`(DSA)` cannot do encryption, decryption, or key exchanges. Designed specifically for designing and verifying data.
+The DSA algorithm involves 2 formulas:
+      1. `Signature Generation.`
+      2. `Signature Verification.`
+With `Signature Generation`, the input is the data and the private key, and the output is the signature.
+Then `Signature Verification`, the input is the data, signature, and the public key, while the output is 1 or 0 (True or False)
+NOTE: DSA uses hashing internally. Instead of signing the entire message, DSA first creates a hash (digest) of the message.
+The algorithm then signs the hash, not the full data.
+
