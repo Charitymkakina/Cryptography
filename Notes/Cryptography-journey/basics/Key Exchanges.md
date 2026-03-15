@@ -24,7 +24,7 @@ The shared secret (SEED) is then used to generate symmetric session keys for enc
 # Security Limitation
 The `RSA Private Key` must be kept secure forever. 
 If compromised, the attacker can: Decrypt the captured ciphertext, recover the SEED value, recreate the session keys, and decrypt past communications
-`RSA Key Exchange` does not provide `Forward Secrecy`
+`RSA Key Exchange` does not provide `Forward Secrecy.`
 
 `Forward Secrecy` means that if a long-term private key is compromised, past communications sessions remain encrypted and secured.
 
@@ -39,4 +39,8 @@ It allows two parties to create a shared secret over an insecure network without
 4. Combine the private value with the peer's public value
 
 Note: Real Diffie-Hellman mathematics uses modular exponentiation to make it computationally hard for an attacker to determine the private values.
+
+Values used in `Diffie-Hellman` should be ephemeral, meaning they should be deleted after the shared secret is attained.
+Using ephemeral values provides forward secrecy. This makes `Diffie-Hellman` more secure than `RSA Key exchange.` 
+
 
