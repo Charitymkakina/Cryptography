@@ -14,6 +14,7 @@ The message includes;
    3. `Session ID used for session resumption.`
    4. `Cipher suites the client supports.`
    5. `Extensions.`
+
 The message basically says: Here are the encryption methods I support; choose one.
 
 # Server Hello
@@ -24,6 +25,7 @@ The server chooses security parameters and sends;
  3. `Session ID.`
  4. `Chosen Cipher suite.`
  5. `Extensions.`
+
 This message means: I selected this encryption method for our communication.
 
 # Server Sends Certificates
@@ -34,7 +36,7 @@ The server then sends its digital certificate. The certificate contains;
 # Server Hello Done
 After sending the certificate, the server sends: `ServerHelloDone.`
 Indicating that the server has finished sending the handshake messages
-Some handshake variants, such as 'ServerKeyExchange`  and  `CertificateRequest`, may also be sent depending on the cipher suite.
+Some handshake variants, such as `ServerKeyExchange`  and  `CertificateRequest`, may also be sent depending on the cipher suite.
 
 NOTE: After receiving the certificate from the server, the client asks the following questions;
     Is the certificate valid? which is validated by using the Certificate Authority's (CA's) public key
@@ -52,8 +54,8 @@ Both sides now have the `client random`, `server random`, and the `Premaster sec
 The `Master secret key`, combined with `Key expansion`, `Client random`, and `Server random`, generates 2 sets of session keys.
 The session keys are `symmetric encryption keys`. They include:
   1. `Client Encryption Key`- Used by the client to encrypt data sent to the server.
-     
-    `Client HMAC Key`- Used to ensure the integrity of data sent by the client.
+      
+      `Client HMAC KEY` - Used to ensure the integrity of data sent by the client.
     
   2. `Server Encryption Key`- Used by the server to encrypt data sent to the client.
      
